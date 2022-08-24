@@ -14,7 +14,7 @@ class AgentInfoPage extends StatelessWidget {
         backgroundColor: primaryColor,
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.white,
-          child: Icon(
+          child: const Icon(
             Icons.arrow_back_outlined,
             color: primaryColor,
           ),
@@ -37,14 +37,14 @@ class AgentInfoPage extends StatelessWidget {
               child: Container(
                 child: Column(
                   children: [
-                    Text(
+                    const Text(
                       "AGENT AGENT",
                       style: textColor,
                     ),
                     SizedBox(
                       height: size.height * 0.03,
                     ),
-                    Text(
+                    const Text(
                       "lorem loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem",
                       style: textColor,
                     ),

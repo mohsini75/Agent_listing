@@ -16,7 +16,7 @@ class AboutUsPage extends StatelessWidget {
         backgroundColor: primaryColor,
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.white,
-          child: Icon(
+          child: const Icon(
             Icons.arrow_back_outlined,
             color: primaryColor,
           ),
@@ -43,15 +43,15 @@ class AboutUsPage extends StatelessWidget {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "ABOUT US",
                             style: textColor,
                           ),
-                          Text(
+                          const Text(
                             "------- OUR STORY -------",
                             style: textColor,
                           ),
-                          Text(
+                          const Text(
                             "lorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem lorem ",
                             style: textColor,
                           ),
@@ -64,7 +64,7 @@ class AboutUsPage extends StatelessWidget {
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: [
+                            children: const [
                               Text(
                                 "Agent 1",
                                 style: textColor,

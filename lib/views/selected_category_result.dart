@@ -1,4 +1,3 @@
-import 'package:agent_listing_app/views/home_page.dart';
 import 'package:agent_listing_app/widgets/appbar_listview_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -16,19 +15,19 @@ class SelectedCategoryPage extends StatelessWidget {
             children: [
               Padding(
                 padding: EdgeInsets.symmetric(
-                    horizontal: MediaQuery.of(context).size.width * 0.15),
+                    horizontal: MediaQuery.of(context).size.width * 0.1),
                 child: GestureDetector(
                   child: Card(
-                    child: Icon(Icons.arrow_back),
+                    child: const Icon(Icons.arrow_back),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30)),
                   ),
                   onTap: () => Get.back(),
                 ),
               ),
-              Icon(
+              const Icon(
                 Icons.support_agent_outlined,
-                size: 60,
+                size: 160,
               )
             ],
           ),

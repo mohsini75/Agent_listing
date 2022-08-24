@@ -14,7 +14,8 @@ Expanded agentBuilder() {
             //final agent = data[index];
             //print(agent);
             return Padding(
-              padding: EdgeInsets.only(top: 8, bottom: 8, left: 20, right: 20),
+              padding:
+                  const EdgeInsets.only(top: 8, bottom: 8, left: 20, right: 20),
               child: Material(
                 color: Colors.white,
                 elevation: 10,
@@ -22,16 +23,16 @@ Expanded agentBuilder() {
                 child: GestureDetector(
                   child: ListTile(
                     shape: RoundedRectangleBorder(
-                      side: BorderSide(color: primaryColor, width: 1),
+                      side: const BorderSide(color: primaryColor, width: 1),
                       borderRadius: BorderRadius.circular(5),
                     ),
-                    leading: Icon(Icons.abc),
-                    title: Text("title"),
-                    subtitle: Text("subtitle"),
+                    leading: const Icon(Icons.abc),
+                    title: const Text("title"),
+                    subtitle: const Text("subtitle"),
                   ),
-                  onTap: () => Get.to(() => VendorCardPage(),
+                  onTap: () => Get.to(() => const VendorCardPage(),
                       transition: Transition.fade,
-                      duration: Duration(milliseconds: 500)),
+                      duration: const Duration(milliseconds: 500)),
                 ),
               ),
             );
@@ -47,7 +48,7 @@ Container categoryBuilder(Size size) {
         itemBuilder: (BuildContext context, int index) => Padding(
           padding: const EdgeInsets.all(15.0),
           child: GestureDetector(
-            child: Column(children: [
+            child: Column(children: const [
               Icon(
                 Icons.home_work_outlined,
                 size: 60,
@@ -55,9 +56,9 @@ Container categoryBuilder(Size size) {
               Text("Working"),
             ]),
             onTap: () {
-              Get.to(() => SelectedCategoryPage(),
+              Get.to(() => const SelectedCategoryPage(),
                   transition: Transition.leftToRight,
-                  duration: Duration(milliseconds: 500));
+                  duration: const Duration(milliseconds: 500));
             },
           ),
         ),

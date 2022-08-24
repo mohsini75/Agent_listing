@@ -1,9 +1,5 @@
-import 'package:agent_listing_app/views/about_us_page.dart';
-import 'package:agent_listing_app/views/agent_info_page.dart';
 import 'package:agent_listing_app/views/bottom_navbar_page.dart';
-import 'package:agent_listing_app/views/home_page.dart';
-import 'package:agent_listing_app/views/selected_category_result.dart';
-import 'package:agent_listing_app/views/vendor_card_page.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

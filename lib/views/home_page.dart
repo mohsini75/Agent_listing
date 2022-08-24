@@ -24,7 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: buildAppBar(context, _controller),
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           categoryBuilder(size),

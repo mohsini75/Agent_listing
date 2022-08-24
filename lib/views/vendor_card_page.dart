@@ -17,7 +17,7 @@ class VendorCardPage extends StatelessWidget {
           child: Card(
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-            child: Icon(
+            child: const Icon(
               Icons.arrow_back_outlined,
               color: primaryColor,
             ),
@@ -32,18 +32,18 @@ class VendorCardPage extends StatelessWidget {
             padding: const EdgeInsets.all(20.0),
             child: Text(
               getInitialsWords("TORONTO ISLAND"),
-              style: TextStyle(fontSize: 80, color: primaryColor),
+              style: const TextStyle(fontSize: 80, color: primaryColor),
             ),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
-        Text(
+        const Text(
           "TORONTO ISLAND GROUP",
           style: TextStyle(color: Colors.white),
         ),
-        SizedBox(
+        const SizedBox(
           height: 15,
         ),
         Padding(

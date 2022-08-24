@@ -17,6 +17,7 @@ GestureDetector agentImageButton(Size size) {
       ),
     ),
     onTap: () => Get.to(() => AgentInfoPage(),
-        transition: Transition.fade, duration: Duration(milliseconds: 500)),
+        transition: Transition.fade,
+        duration: const Duration(milliseconds: 500)),
   );
 }
