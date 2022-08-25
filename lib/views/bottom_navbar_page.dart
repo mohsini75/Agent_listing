@@ -36,11 +36,17 @@ class _BottomNavBarState extends State<BottomNavBarPage> {
         backgroundColor: primaryColor,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(
+              Icons.home,
+              size: 40,
+            ),
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.people),
+            icon: Icon(
+              Icons.people,
+              size: 40,
+            ),
             label: '',
           ),
         ],

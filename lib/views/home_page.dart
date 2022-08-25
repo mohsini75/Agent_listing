@@ -1,5 +1,6 @@
 import 'package:agent_listing_app/constant/color.dart';
 import 'package:agent_listing_app/controller/agent_data.dart';
+import 'package:agent_listing_app/views/searchTextForm.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/appbar_listview_widget.dart';
@@ -21,19 +22,21 @@ class _MyHomePageState extends State<MyHomePage> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       key: globalKey,
-      appBar: buildAppBar(context, _controller),
-      body: Column(
-        children: [
-          const SizedBox(
-            height: 25,
-          ),
-          categoryBuilder(size),
-          const Divider(
-            thickness: 1,
-            color: primaryColor,
-          ),
-          agentBuilder()
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            const SearchTextFormFieldwithPrefix(),
+            const SizedBox(
+              height: 25,
+            ),
+            categoryBuilder(size),
+            const Divider(
+              thickness: 1,
+              color: primaryColor,
+            ),
+            agentBuilder()
+          ],
+        ),
       ),
     );
   }

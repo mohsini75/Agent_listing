@@ -14,27 +14,27 @@ class AboutUsPage extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
         backgroundColor: primaryColor,
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.white,
-          child: const Icon(
-            Icons.arrow_back_outlined,
-            color: primaryColor,
-          ),
-          onPressed: () => Get.back(),
-        ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.miniStartTop,
+        // floatingActionButton: FloatingActionButton(
+        //   backgroundColor: Colors.white,
+        //   child: const Icon(
+        //     Icons.arrow_back_outlined,
+        //     color: primaryColor,
+        //   ),
+        //   onPressed: () => Get.back(),
+        // ),
+        // floatingActionButtonLocation: FloatingActionButtonLocation.miniStartTop,
         body: Stack(
           children: [
-            Column(
-              children: [
-                Image.asset(
-                  imageAddress,
-                  height: size.height * .4,
-                  width: double.infinity,
-                  fit: BoxFit.fill,
-                ),
-                SingleChildScrollView(
-                  child: Padding(
+            SingleChildScrollView(
+              child: Column(
+                children: [
+                  Image.asset(
+                    imageAddress,
+                    height: size.height * .4,
+                    width: double.infinity,
+                    fit: BoxFit.fill,
+                  ),
+                  Padding(
                     padding: EdgeInsets.symmetric(
                         horizontal: size.width * .1,
                         vertical: size.width * .02),
@@ -78,9 +78,9 @@ class AboutUsPage extends StatelessWidget {
                         ],
                       ),
                     ),
-                  ),
-                )
-              ],
+                  )
+                ],
+              ),
             )
           ],
         ));
